@@ -1,1 +1,1 @@
-# my-clock-widget
+# my-clock-widget for Notion
