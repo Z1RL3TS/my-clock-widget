@@ -32,17 +32,20 @@
         .clockHands.secHand{
             width: 4.4vmin;
             left: 47.2;
+            background-image: url('clockSecHand.svg');
         }
 
         .clockHands.hourHand{
             width: 6.2vmin;
             left: 46.5%;
             top: 22.5%;
+            background-image: url('clockHourHand.svg');
         }
 
         .clockHands.minHand{
             width: 5.5vmin;
             left: 47.2%;
+            background-image: url('clockMinHand.svg');
         }
     }
 
@@ -61,3 +64,4 @@
     }
 
 }
+
