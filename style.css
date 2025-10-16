@@ -1,0 +1,62 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    background: hsl(357, 45%, 10%);
+    overflow: hidden;
+
+    .clock{
+        width: 85vmin;
+        aspect-ratio: 1;
+        border: 50%;
+        background: url('Images/ClockBg.png') center center / cover no-repeat;
+        position: relative;
+
+
+        .clockHands{
+            position: absolute;
+            width: 5.5vmin;
+            left: 48%;
+            bottom: 50%;
+            transform-origin: center bottom;
+        }
+
+        .clockHands.secHand{
+            width: 4.4vmin;
+            left: 47.2;
+        }
+
+        .clockHands.hourHand{
+            width: 6.2vmin;
+            left: 46.5%;
+            top: 22.5%;
+        }
+
+        .clockHands.minHand{
+            width: 5.5vmin;
+            left: 47.2%;
+        }
+    }
+
+    .clock::after{
+        content: "";
+        width: 2.5vmin;
+        aspect-ratio: 1;
+        position: absolute;
+        top: 49.6%;
+        left: 50.3%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background: hsl(348, 48%, 8%);
+        box-shadow: 0px 0px 20px rgb(82, 12, 12);
+        
+    }
+}
