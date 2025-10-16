@@ -10,7 +10,7 @@
     display: grid;
     place-content: center;
     height: 100vh;
-    background: hsl(357, 45%, 10%);
+    background: transperent;
     overflow: hidden;
 
     .clock{
@@ -64,4 +64,5 @@
     }
 
 }
+
 
